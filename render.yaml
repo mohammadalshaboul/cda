@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: life-age-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python cda.py
+    autoDeploy: true
